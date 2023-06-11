@@ -70,9 +70,9 @@ body {
 
 .zalo {
     position: fixed;
-    bottom: 100px;
+    bottom: 80px;
     right: 0;
-    width: 50px;
+    width: 40px;
 }
 
 .zalo:hover {
@@ -81,9 +81,9 @@ body {
 
 .messenger {
     position: fixed;
-    bottom: 20px;
+    bottom: 32px;
     right: 0;
-    width: 50px;
+    width: 40px;
 
 }
 
@@ -99,7 +99,6 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 }
-
 /* header, nav, main, section, article, aside, footer{ border: 1px solid green; padding: 10px;  } */
 .list-tour article {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.592);
