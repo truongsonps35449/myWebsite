@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styte.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img onclick="onSubmit()" src="./logo.jpg" alt="">
+        <div style="margin: 10px;"><b class="color">HOTLINE:033451956</b><br><br> 
+            <div> <a href="./login.html" style="text-decoration: none; color: #000;"><i class="bi bi-person-circle"></i> Đăng nhập</a> </div>
+        </div>
+        
+    </header>
+    <section class="login">
+        <article>
+            <img src="./login.png" width="170px" />
+            <form action="">
+                <h3>ĐĂNG NHẬP</h3>
+                <p>Tên đăng nhập</p>
+                <input id="inputUser" type="text" />
+                <p>Mật khẩu</p>
+                <input id="inputPass" type="text" />
+                <br />
+                <input type="checkbox" />Ghi nhớ tài khoản <br />
+                <button style="background-color: rgb(255, 255, 255); border-radius: 15px; border: solid 0.5px grey;" ><a href="demo1.html" style="color: black;">Đăng nhập</a></button>
+                <br />
+                <a href=""><i>Quên mật khẩu?</i></a>
+                <a href=""><i>Chưa có tài khoản?</i></a>
+            </form>
+        </article>
+    </section>
+    <script>
+          function onSubmit() {
+        window.location.href = 'http://127.0.0.1:5501/index.html'
+      }
+    </script>
+</body>
+</html>

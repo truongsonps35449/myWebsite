@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Trang Chủ</title>
+</head>
+<body onload="loadTheme()">
+    
+        <header>
+            <img src="./logo.jpg" alt="">
+            <div style="margin: 10px;"><b  class="color">HOTLINE:033451956</b> 
+                <div class="color">
+                    <div id="c1"></div>
+                    <div id="c2"></div>
+                    <div id="c3"></div>
+                </div>
+                <div> <a href="./login.html" style="text-decoration: none; color: #000;"><i class="bi bi-person-circle"></i> Đăng nhập</a> </div>
+            </div>
+            
+        </header>
+        <div class="menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <nav>
+            <a href="">Trang chủ </a>
+            <a href="">Giới thiệu </a>
+            <a href="">Tin tức </a>
+            <a href="">Tour trong nước </a>
+            <a href="">Tour quốc tế </a>
+            <a href="">Liên hệ</a>
+        </nav>
+        <main>
+        <div class="slider" > 
+            <img id="banner" src="./Banner1.jpg" alt="" width="100%"> 
+            <i class="bi bi-caret-left" onclick="prev()"> </i>
+            <i class="bi bi-caret-right" onclick="next()"></i> 
+            <div class="list">
+                <span id="0">.</span>
+                <span id="1">.</span>
+                <span id="2">.</span>
+            </div>  
+        </div>
+        
+        <h2 class="title">Danh sách tour</h2>
+        <section class="list-tour"> 
+            <article>
+                <div>
+                    <img src="./quocte1.jpg" onclick="sub()"> 
+                </div>
+        <p><b>Tour Hàn Quốc</b></p>
+        <div class="thongtintour">
+            <div>Giá: 12.000.000 đ</div>
+            <div><i class="bi bi-stopwatch"> Thời gian: </i>2N3Đ</div>
+            <div><i class="bi bi-car-front-fill"> Phương tiện: </i>Ô tô</div>
+            <div><i class="bi bi-house"> Khách sạn: </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>  </div>
+            <div><i class="bi bi-calendar"> Ngày đi: 18-04-2024</i></div>
+        </div>
+        </article>
+        <article>
+            <div>
+                <img src="./quocte2.jpg" onclick="sub()"> 
+            </div>
+            <p><b>Ấn Độ</b></p>
+            <div class="thongtintour">
+                <div>Giá: 12.000.000 đ</div>
+                <div><i class="bi bi-stopwatch"> Thời gian: </i>2N3Đ</div>
+                <div><i class="bi bi-car-front-fill"> Phương tiện: </i>Ô tô</div>
+                <div><i class="bi bi-house"> Khách sạn: </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>  </div>
+                <div><i class="bi bi-calendar"> Ngày đi: 18-04-2024</i></div>
+            </div>
+        </article>
+        <article>
+            <div>
+                <img src="./quocte3.jpg" onclick="sub()"> 
+            </div>
+        <p><b>Tour Campuchia</b></p>
+        <div class="thongtintour">
+            <div>Giá: 12.000.000 đ</div>
+            <div><i class="bi bi-stopwatch"> Thời gian: </i>2N3Đ</div>
+            <div><i class="bi bi-car-front-fill"> Phương tiện: </i>Ô tô</div>
+            <div><i class="bi bi-house"> Khách sạn: </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> </div>
+            <div><i class="bi bi-calendar"> Ngày đi: 18-04-2024</i></div>
+        </div>
+        </article>
+        <article>
+            <div>
+                <img src="./quocte4.jpg"onclick="sub()"> 
+            </div>
+        <p><b>Tour Thụy </b></p>
+        <div class="thongtintour">
+            <div>Giá: 12.000.000 đ</div>
+            <div><i class="bi bi-stopwatch"> Thời gian: </i>2N3Đ</div>
+            <div><i class="bi bi-car-front-fill"> Phương tiện: </i>Ô tô</div>
+            <div><i class="bi bi-house"> Khách sạn: </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> </div>
+            <div><i class="bi bi-calendar"> Ngày đi: 18-04-2024</i></div>
+        </div>
+        </article>
+        </section>
+        <section class="banner" >
+            <img src="./ánh sáng chạy.jpg" alt="">
+        </section>
+        <h2 class="title">Thư viện ảnh của khách</h2>
+        <section class="gallery">
+            <div class="column-3">
+                <img src="./gallery1.jpg" alt="">
+                <img src="./gallery2.jpg" alt="">
+                <img src="./gallery3.jpg" alt="">
+            </div>
+            <div class="column-4">
+                <img src="./gallery4.jpg" alt="">
+                <img src="./gallery5.jpg" alt="">
+                <img src="./gallery6.jpg" alt="">
+                <img src="./gallery7.jpg" alt="">
+            </div>
+            <div class="column-3">
+                <img src="./gallery8.jpg" alt="">
+                <img src="./gallery9.jpg" alt="">
+                <img src="./gallery10.jpg" alt="">
+            </div>
+            <div class="column-4">
+                <img src="./gallery11.jpg" alt="">
+                <img src="./gallery12.jpg" alt="">
+                <img src="./gallery13.jpg" alt="">
+                <img src="./gallery14.jpg" alt="" >
+            </div>
+        </section>
+        <h2 class="title">Đánh giá của khách hàng</h2>
+        <section class="feedback">
+            
+            <article>
+                <img src="./Lionel-Messi-training-top-1.jpeg" alt="">
+                <p class="tenkh">Ông Lionel Messi</p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <p>"Chuyến du lịch này cho tôi rất nhiều bức tranh đẹp, nó là sự thành công với tay săn ảnh như tôi."</p>
+            </article>
+            <article>
+                <img src="./khachhang.jpg" alt="">
+                <p class="tenkh">Ông Kevin DeRuyne</p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <p>"Tôi đã có 1 cảm giác thật tuyệt, tôi nghĩ tương lai vẫn sẽ gắn bó với những Tour chất lượng như thế này."</p>
+            </article>
+            <article>
+                <img src="./khachhang3.jpg" alt="">
+                <p class="tenkh">Ông Cristiano Ronaldo</p>
+                <p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+                <p>"Chỉ với vài bước đơn giản tôi và vợ của mình đã có 1 chuyến đi không thể tuyệt vời hơn nữa."</p>
+            </article>
+        </section>
+        <h2 class="title">Du lịch quốc tế</h2>
+                <section class="grid-container">
+                    <div class="item1">
+                        <img src="./quocte5.jpg" alt="" srcset="">
+                        <p class="overlay">Tour du lịch Thụy Sĩ 2N3Đ của chúng tôi sẽ đầy hứa hẹn, với những cảnh đẹp núi rừng và không khí mát mẻ ở nơi đây tôi tin chắc rằng đây sẽ là 1 chuyến đi đang nhớ nhất trong những chuyến du lịch của bạn. </p>
+                    </div>
+                    <div class="item2">
+                        <img src="./quocte2.jpg" alt="" srcset="">
+                        <p class="overlay">Tour du lịch Ấn Độ 2N3Đ của chúng tôi sẽ đầy hứa hẹn, với nền văn hóa những ngôi đền lộng lẫy nơi đây sẽ là trải nghiệm thú vị của bạn. </p>
+                    </div>
+                    <div class="item3">
+                        <img src="./quocte3.jpg" alt="" srcset="">
+                        <p class="overlay">Tour du lịch Thái Lan 2N3Đ của chúng tôi sẽ đem đến cho bạn những nét đẹp của những ngôi chùa lớn nhất Đông Nam Á và những điều có thể bạn chưa từng trải nghiệm. </p>
+                    </div>
+                    <div class="item4">
+                        <img src="./quocte4.jpg" alt="" srcset="">
+                        <p class="overlay">Tour du lịch Hàn Quốc 2N3Đ này bạn sẽ thấy được những cung điện bạn thường thấy trong những bộ phim Hàn Quốc trước giờ bạn xem và ăn những món ăn đặc sản ở đây.</p>
+                    </div>
+                    <div class="item5">
+                        <img src="./gallery5.jpg" alt="" srcset="">
+                        <p class="overlay">Tour du lịch Nhật Bản 2N3Đ sẽ không khiến bạn thất vọng với những cảnh đẹp như: Núi Phú Sĩ, Tháp Tokyo,... Và nhiều điều khác để bạn trải nghiệm. </p>
+                    </div>
+                </section>
+            </article>   
+        </section>
+        </main>
+        <footer>
+            <section class="grid-container-footer">
+                <div class="item1"> 
+                    <h3>Địa chỉ</h3>
+                <hr />
+                <p>Phường TÂN CHÁNH HIỆP, Q12 ,TPHCM</p>
+                <p>Email: dulich@gmail.com</p>
+                <p>Điện Thoại: 0355451956</p>
+                <p>Mã số thuế: 11111111</p>
+                <p>GPKD lữ hành quốc tế số 79-400/2015/TCDL</p>
+            </div>
+            <div class="item2">
+            <h3>BẢN ĐỒ</h3>
+            
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4436614899205!2d106.62525347490894!3d10.853821089299677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2sQuang%20Trung%20Software%20City!5e0!3m2!1sen!2s!4v1685070898690!5m2!1sen!2s" 
+            width="300"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referere-when-downgrade"
+        ></iframe>
+    </div>
+    <div class="item3">
+        <h3>KẾT NỐI</h3>
+        <hr />
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <p>Đăng kí nhận tin khuyến mãi</p>
+        <input type="text" placeholder="Nhập email nhận khuyến mãi"
+        width="90%">
+        <button class="btn">Đăng Ký</button>
+    </div> 
+    </section>
+        <img class="zalo" src="anhandsvg/zalo-logo.png" alt="">
+        <img class="messenger" src="anhandsvg/Facebook_Messenger_logo_2020.svg" alt="">
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./main.js"></script>
+        <script>
+            function sub() {
+            window.location.href = 'http://127.0.0.1:5501/detail.html'
+      }
+        </script>
+</body>
+</html>
